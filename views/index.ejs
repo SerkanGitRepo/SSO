@@ -1,0 +1,29 @@
+<%- include('_partial/_header'); -%>
+<body>
+<form action="/index" method="post" id="loginldap" name="loginldapfrom">
+    <h1>Login LDAP</h1>
+    <input type="hidden" name="txtLoginLDAP" id="txtLoginLDAP" value="https://sso.zorlu.com.tr/v2/Authorization?client_id=39940BCA23EC4B6199D53CFB58114B94&client_secret=8ECD562BFF374D259EE42A2C5E385093C2E20088&response_type=code&response_mode=form_post&scope=openid profile HRPHOTO&redirect_uri=http://localhost:3000/login">
+    <input type="submit" id="getrefLoginLDAP" value="Login LDAP">
+</form>
+<form action="/index" method="post" id="logoutldap" name="logoutldapform">
+    <h1>Logout LDAP</h1>
+    <input type="hidden" name="txtLogoutLDAP" id="txtLogoutLDAP" value="https://sso.zorlu.com.tr/v2/Logout?client_id=39940BCA23EC4B6199D53CFB58114B94:8ECD562BFF374D259EE42A2C5E385093C2E20088&post_logout_redirect_uri=http://localhost:3000/logout">
+    <input type="submit" id="getrefLogoutLDAP" value="Logout LDAP">
+</form>
+<form action="/index" method="post" id="loginldap" name="loginldapfrom">
+    <h1>Login MSP</h1>
+    <input type="hidden" name="txtLoginMSP" id="txtLoginMSP" value="https://sso.zorlu.com.tr/v2/Authorization?client_id=C22E564BE26D44A4830E5BCD1DDAA84D&client_secret=8B88AE646D96BC4E2557D800459900EB7AC51ED4&response_type=code&response_mode=form_post&scope=openid profile HRPHOTO&redirect_uri=http://localhost:3000/loginMSP">
+    <input type="submit" id="getrefLoginMSP" value="Login MSP">
+</form>
+<form action="/index" method="post" id="logoutmsp" name="logoutmspform">
+    <h1>Logout MSP</h1>
+    <input type="hidden" name="txtLogoutMSP" id="txtLogoutMSP" value="https://sso.zorlu.com.tr/v2/Logout?client_id=C22E564BE26D44A4830E5BCD1DDAA84D:8B88AE646D96BC4E2557D800459900EB7AC51ED4&post_logout_redirect_uri=http://localhost:3000/logoutMSP">
+    <input type="submit" id="getrefLogoutMSP" value="Logout MSP">
+</form>
+<form action="/index" method="post" id="getuser" name="getuser">
+    <h1>Get User</h1>
+    <input type="hidden" name="txtGetUser" id="txtGetUser" value="https://sso.zorlu.com.tr/v2/Authorization?client_id=39940BCA23EC4B6199D53CFB58114B94&client_secret=8ECD562BFF374D259EE42A2C5E385093C2E20088&response_type=code&response_mode=form_post&scope=openid profile HRPHOTO&redirect_uri=http://localhost:3000/getuser">
+    <input type="submit" id="getrefGetUser" value="Get User">
+</form>
+</body>
+<%- include ('_partial/_footer'); -%>

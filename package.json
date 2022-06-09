@@ -1,0 +1,41 @@
+{
+  "name": "ssonodejs",
+  "version": "1.0.0",
+  "description": "Node JS uygulaması ile SSO API Testi",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SerkanGitRepo/SSOTest.git"
+  },
+  "keywords": [
+    "SSO",
+    "NodeJs",
+    "oAuth2",
+    "OpenId"
+  ],
+  "author": "Serkan Aksüt",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SerkanGitRepo/SSOTest/issues"
+  },
+  "homepage": "https://github.com/SerkanGitRepo/SSOTest#readme",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.0.0",
+    "ejs": "^3.1.7",
+    "express": "^4.18.0",
+    "express-openid-connect": "^2.7.2",
+    "express-session": "^1.17.2",
+    "json-beautify": "^1.1.1",
+    "jwt-decode": "^3.1.2",
+    "passport": "^0.5.2",
+    "path": "^0.12.7",
+    "perf_hooks": "^0.0.1",
+    "uuid": "^8.3.2"
+  }
+}
