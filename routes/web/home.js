@@ -170,7 +170,7 @@ router.post('/getuser', function(req, res) {
 
         var objsUsr = JSON.parse(chunks_of_data);
         console.log(objsUsr);
-        var JsonSchemaUsr = JSON.parse(JSON.stringify({"resource": "MSP","jti": "5635ffc5-c82c-4df2-845e-7f0f9e9f2c34","name": "serkanaks", "clientId":"C22E564BE26D44A4830E5BCD1DDAA84D:8B88AE646D96BC4E2557D800459900EB7AC51ED4","givenName": "serkanaks","phone": "(212) 456 23 30","gsm": "(533) 721 84 94","department": "Kalite Test ve Sürüm Yönetimi Müdürlüğü","company":"","officeName": "Levent199","title": "Kalite Test ve Sürüm Yönetimi Müdürü","email": "serkan.aksut@zorlu.com","domain": "zorlu.com","registrationNumber": "50001910","picture": "https:/sso.zorlu.com.tr/v2/Photo/5635ffc5-c82c-4df2-845e-7f0f9e9f2c34","userPoolId": 153,"roles": []}));
+        var JsonSchemaUsr = JSON.parse(JSON.stringify({"resource": "MSP","sub":"serkan.aksut78@gmail.com","jti": "5635ffc5-c82c-4df2-845e-7f0f9e9f2c34","name": "serkanaks","username":"serkan.aksut78@gmail.com","clientId":"C22E564BE26D44A4830E5BCD1DDAA84D:8B88AE646D96BC4E2557D800459900EB7AC51ED4","givenName": "serkanaks","familyName":"","phone": "(212) 456 23 30","gsm": "(533) 721 84 94","department": "Kalite Test ve Sürüm Yönetimi Müdürlüğü","company":"","officeName": "Levent199","title": "Kalite Test ve Sürüm Yönetimi Müdürü","email": "serkan.aksut@zorlu.com","domain": "zorlu.com","registrationNumber": "50001910","picture": "https:/sso.zorlu.com.tr/v2/Photo/5635ffc5-c82c-4df2-845e-7f0f9e9f2c34","userPoolId": 153,"nonce":"","roles": []}));
 
         Object.getOwnPropertyNames(objsUsr).forEach(
             function (valUsr, idx, array) {
