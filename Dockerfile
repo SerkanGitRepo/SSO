@@ -1,9 +1,9 @@
 FROM node:18-alpine
 
-//EXPOSE 3000
-//WORKDIR /
-//COPY . /
-//CMD ["node", "app.js"]
+#EXPOSE 3000
+#WORKDIR /
+#COPY . /
+#CMD ["node", "app.js"]
 
 # Create app directory
 WORKDIR /usr/src/app
