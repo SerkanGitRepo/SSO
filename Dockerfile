@@ -1,4 +1,4 @@
-FROM 18.3.0-alpine3.15
+FROM mhart/alpine-node
 
 EXPOSE 3000
 WORKDIR /app
