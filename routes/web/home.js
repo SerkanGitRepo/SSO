@@ -58,7 +58,7 @@ router.post('/login', function(req, res) {
 
     var decodedValue = jwt_decode(req.body.access_token);
     var objs = JSON.parse(JSON.stringify(decodedValue));
-    var JsonSchema = JSON.parse(JSON.stringify({"jti":"acb63cbb-d669-4808-8678-83db4a3e5c74","client_id":"39940BCA23EC4B6199D53CFB58114B94:8ECD562BFF374D259EE42A2C5E385093C2E20088","Resource":"LDAP","name":"Serkan Aksüt","username":"serkanaks","given_name":"Serkan","family_name":"Aksüt","phone_number":"(212) 456 23 30","mobilephone":"(533) 721 84 94","company":"ZORLU HOLDİNG A.Ş.","department":"Kalite Test ve Sürüm Yönetimi Müdürlüğü","officename":"Levent199","label":"Kalite Test ve Sürüm Yönetimi Müdürü","email":"serkan.aksut@zorlu.com","domain":"zorlu.com","userpoolid":"155","nonce":"","role":[],"act":"50001910","picture":"xyz","nbf":1651746055,"exp":1651749655,"iat":1651746055,"iss":"https://auth.zorlu.com/i","aud":"https://auth.zorlu.com/a"}));
+    var JsonSchema = JSON.parse(JSON.stringify({"jti":"acb63cbb-d669-4808-8678-83db4a3e5c74","client_id":"39940BCA23EC4B6199D53CFB58114B94:8ECD562BFF374D259EE42A2C5E385093C2E20088","sub":"serkan.aksut@zorlu.com","Resource":"LDAP","name":"Serkan Aksüt","username":"serkanaks","given_name":"Serkan","family_name":"Aksüt","phone_number":"(212) 456 23 30","mobilephone":"(533) 721 84 94","company":"ZORLU HOLDİNG A.Ş.","department":"Kalite Test ve Sürüm Yönetimi Müdürlüğü","officename":"Levent199","label":"Kalite Test ve Sürüm Yönetimi Müdürü","email":"serkan.aksut@zorlu.com","domain":"zorlu.com","userpoolid":"155","nonce":"","role":[],"act":"50001910","picture":"xyz","nbf":1651746055,"exp":1651749655,"iat":1651746055,"iss":"https://auth.zorlu.com/i","aud":"https://auth.zorlu.com/a"}));
 console.log(decodedValue);
     var htmlstr="";
 
