@@ -1,0 +1,18 @@
+version: "2.6.1"
+services:
+  jenkins:
+    image: jenkins/jenkins:lts
+    ports:
+     - 8080:8080
+     - 50000:50000
+    networks:
+      - myNetwork
+    container_name: jenkins
+  sonarqube:
+    image: sonarqube:lts
+    ports:
+     - 9000:9000
+    networks:
+      - myNetwork
+networks:
+  myNetwork:
